@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="7_style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box dark">
+            <div class="tt active">
+                <i class="ti"></i>
+            </div>
+            <div class="ds">
+                <div id="display"></div>
+            </div>
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <th><button class="bo" id="clear">C</button></th>
+                        <th><button class="bo" id="/">&divide;</button></th>
+                        <th><button class="bo" id="*">&times;</button></th>
+                        <th><button class="bo" id="backspace"><</button></th>
+                    </tr>
+                    <tr>
+                        <th><button class="bn" id="7">7</button></th>
+                        <th><button class="bn" id="8">8</button></th>
+                        <th><button class="bn" id="9">9</button></th>
+                        <th><button class="bo" id="-">-</button></th>
+                    </tr>
+                    <tr>
+                        <th><button class="bn" id="4">4</button></th>
+                        <th><button class="bn" id="5">5</button></th>
+                        <th><button class="bn" id="6">6</button></th>
+                        <th><button class="bo" id="+">+</button></th>
+                    </tr>
+                    <tr>
+                        <th><button class="bn" id="1">1</button></th>
+                        <th><button class="bn" id="2">2</button></th>
+                        <th><button class="bn" id="3">3</button></th>
+                        <th rowspan="2"><button class="bo1" id="equal">=</button></th>
+                    </tr>
+                    <tr>
+                        <th><button class="bo" id="(">(</button></th>
+                        <th><button class="bn" id="0">0</button></th>
+                        <th><button class="bo" id=")">)</button></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="7_script.js"></script>
+</body>
+</html>

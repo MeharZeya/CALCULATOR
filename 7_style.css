@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.5s ease;
+}
+body{
+    font-family: sans-serif;
+    background-image: linear-gradient(to bottom right, rgb(44, 4, 79), rgb(10, 165, 134));
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+   display: grid;
+   place-items: center;
+}
+.box{
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #000;
+}
+.tt{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+}
+.tt.active{
+    color: #333;
+}
+.tt.active::before{
+    background-color: #fff;
+}
+.tt::before{
+    content: '';
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    z-index: -1;
+}
+#display{
+    margin: 0 10px;
+    height: 150px;
+    width: auto;
+    max-width: 270px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 30px;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+ } 
+ #display::-webkit-scrollbar{
+    display: block;
+    height: 8px;
+ }
+ .box.dark #display{
+    color: white;
+ }
+button{
+    height: 60px;
+    width: 60px;
+    border: 0;
+    border-radius: 30px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+button:hover{
+    transform: scale(1.2);
+}
+button#equal{
+    height: 130px;
+}
+.box{
+    background-color: #fff;
+}
+.box #dispaly{
+    color: #0a1e23;
+}
+.box button#clear{
+    background-color: #feb7bc;
+    color: #fb3441;
+}
+.box button.bn{
+    background-color: #b1e1fa;
+    color: #000;
+}
+.box button.bo{
+    background-color: #fea5fa;
+    color: #f06fec;
+}
+.box button.bo1{
+    background-color: #51ffd6;
+    color: black;
+}
+.box.dark{
+    background-color: #071115 ;
+}
+.box.dark #dispaly{
+    color: #f8fafd;
+}
+.box.dark button#clear{
+    background-color: #42262d;
+    color: #bd3740;
+}
+.box.dark button.bn{
+    background-color: #243b47;
+    color: #f8fafb;
+}
+.box.dark button.bo{
+    background-color: #392b4d;
+    color: #aa00a4;
+}
+.box.dark button.bo1{
+    background-color: #466247;
+    color: #ffffff;
+}
